@@ -21,9 +21,9 @@ public class TileBoard {
     public TileBoard(InfoCenter infoCenter) {
         this.infoCenter = infoCenter;
         pane = new StackPane();
-        pane.setMinSize(UIConstants.APP_WIDTH,UIConstants.TILE_BOARD_HEIGHT);
+        pane.setMinSize(UIConstants.APP_WIDTH, UIConstants.TILE_BOARD_HEIGHT);
         pane.setTranslateX(UIConstants.APP_WIDTH/2);
-        pane.setTranslateY((UIConstants.TILE_BOARD_HEIGHT/2)+UIConstants.INFO_CENTER_HEIGHT);
+        pane.setTranslateY((UIConstants.TILE_BOARD_HEIGHT/2)+ UIConstants.INFO_CENTER_HEIGHT);
 
         addAllTiles();
         winningLine = new Line();
@@ -207,6 +207,10 @@ public class TileBoard {
         }
         @FXML
         private String getValue() {
+            return label.getText();
+        }
+        @FXML
+        private String getValue1() {
             return label.getText();
         }
         @FXML

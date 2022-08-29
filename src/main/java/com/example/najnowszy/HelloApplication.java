@@ -48,6 +48,10 @@ public class HelloApplication extends Application {
         initInfoCenter(root);
         initTileBoard(root);
     }
+    private void initLayout1(BorderPane root) {
+        initInfoCenter(root);
+        initTileBoard(root);
+    }
 
     private void initTileBoard(BorderPane root) {
         tileBoard = new TileBoard(infoCenter);

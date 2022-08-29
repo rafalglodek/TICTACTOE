@@ -19,12 +19,12 @@ public class InfoCenter {
     }
     public InfoCenter() {
         pane = new StackPane();
-        pane.setMinSize(UIConstants.APP_WIDTH,UIConstants.APP_HEIGHT);
+        pane.setMinSize(UIConstants.APP_WIDTH, UIConstants.APP_HEIGHT);
         pane.setTranslateX(UIConstants.APP_WIDTH/2);
         pane.setTranslateY(UIConstants.INFO_CENTER_HEIGHT/2);
 
         message = new Label("Tick-Tack-Toe");
-        message.setMinSize(UIConstants.APP_WIDTH,UIConstants.INFO_CENTER_HEIGHT);
+        message.setMinSize(UIConstants.APP_WIDTH, UIConstants.INFO_CENTER_HEIGHT);
         message.setFont(Font.font(24));
         message.setAlignment(Pos.CENTER);
         message.setTranslateY(-20);
@@ -44,6 +44,10 @@ public class InfoCenter {
     }
     @FXML
     public  void showStartButton() {
+        startGameButton.setVisible(true);
+    }
+    @FXML
+    public  void showStartButton1() {
         startGameButton.setVisible(true);
     }
     @FXML
